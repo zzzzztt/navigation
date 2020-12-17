@@ -1,0 +1,45 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+  <title>Inscription</title>
+  <link rel="icon" href="navi.ico" type="image/x-icon">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="./jsRequetManager.js" type="text/javascript">
+  </script>
+  <meta content="text/html;charset=utf-8" http-equiv="content-type"/>
+  <link href="style.css" type="text/css" media="screen" rel="stylesheet"/>
+  <header>
+    <h1>NAVI_GPS</h1>
+  </header>
+</head>
+
+<body>
+  <div class="title">
+    <p><h1>Inscription !</h1></p>
+
+  </div>
+  <div class="Divetat" style="text-align: right">
+    <input type="button" id="but3" onclick="window.location.href='homepage.html'" value="Acceuil">
+  </div>
+<div class="mainbox" >
+  <form method="post" action="./inscription.php">
+    <div>
+      <p><label for="username" class="form_label"  >nom:</label>
+      <input id="username" name="username"  type="text" placeholder="Entrer adresse email" value="" size="25" />
+      </p>
+    </div>
+
+    <div>
+        <p><label for="password" class="input_class">mot de passe:</label>
+        <input id="mdp1"name="mdp1" type="password"  size="25" /></p>
+
+        <p><label for="verifier_password" class="input_class">verifier mot de passe:</label>
+        <input id="mdp2"name="mdp2" type="password" size="25" /></p>
+
+
+    </div>
+  </form>
+  <input type="submit" id="but3" onclick="enregistrerUser()" value="Enregistrer">
+</div>
+
+</body>

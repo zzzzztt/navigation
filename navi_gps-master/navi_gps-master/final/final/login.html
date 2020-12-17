@@ -1,0 +1,43 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+
+    <title>Login</title>
+    <link rel="icon" href="navi.ico" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="./jsRequetManager.js" type="text/javascript">
+    </script>
+    <meta content="text/html;charset=utf-8" http-equiv="content-type"/>
+    <link href="style.css" type="text/css" media="screen" rel="stylesheet"/>
+    <header>
+        <h1>NAVI_GPS</h1>
+    </header>
+
+</head>
+
+<body>
+  <div class="title">
+      <h>  Login !</h>
+  </div>
+  <div class="Divetat" style="text-align: right">
+      <input type="button" id="but3" onclick="window.location.href='homepage.html'" value="Acceuil">
+  </div>
+<div  class="mainbox">
+
+                  <form name="BoxLogin" method="post" action="login.php"><!-- method="post" action="login.php">-->
+                      <p><label for="username" class="form_label">nom:</label>
+                      <input name="username" id="username" type="text"  size="25" /></p>
+
+                      <p><label for="password" class="form_label fl-label">mot de passe:</label>
+                      <input name="mdp"  id="password" type="password" size="25" /></p>
+                        <input type="submit" id="but3" value="LOGIN">
+                  </form>
+
+                  <p> Vous n'avez pas de compte?<a href="inscription.html">inscription</a></p>
+                <!--  <p> Vous avez oublier voutre mot de passe?<a href="changerMdp.html">oublier mot de passe</a></p> -->
+</div>
+</br>
+
+
+</body>

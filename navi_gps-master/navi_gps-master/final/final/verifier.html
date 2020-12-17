@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+
+    <title>Verifier Etape</title>
+    <link rel="icon" href="navi.ico" type="image/x-icon">
+    <meta content="text/html;charset=utf-8" http-equiv="content-type"/>
+    <link href="style.css" type="text/css" media="screen" rel="stylesheet"/>
+    <header>
+        <h1>NAVI_GPS</h1>
+    </header>
+</head>
+
+<body>
+  <div class="title">
+      <h>  Verifier etapes !</h>
+  </div>
+
+  <div class="set" style="text-align: left">
+      <input type="button" id="but1" onclick="information">
+      <input type="button" id="but2" onclick="histoire">
+  </div>
+  <div class="Divetat" style="text-align: right">
+      <input type="button" id="but3" onclick="acceuil" value="Acceuil">
+      <input type="button" id="but3" onclick="login" value="Login"><!--未登陆时显示-->
+      <input type="button" id="but3" onclick="logout" value="Logout"><!--登陆时显示-->
+  </div>
+
+
+  <div  class="mainbox">
+    <form name="BoxVerifier" method="post" action="">
+        <p><label >prochaine troncon:</label>
+        <input name="troncon"  tabindex="1"  type="text" value="" size="25" /></p>
+
+        <p><label>prochaine ville:</label>
+            <!--des information de ville-->
+        <input name="mdp" class="form_field"tabindex="2" type="password" value="" size="25" /></p>
+        <div classe="verifier">
+            <p>Atteignez-vous la prochaine ville ?
+                Oui <input name="atteindre" type="radio" value="atteindre">
+                Non <input name="atteindre" type="radio" value="nonatteindre">
+            </p>
+            <!--si l'utilisateur a perdu-->
+            <p><label>prochaine ville vous aller atteindre:</label>
+            <input name="mdp" class="form_field"tabindex="2" type="password" value="" size="25" />
+            </p>
+        </div>
+    </form>
+
+</div>
+</br>
+
+
+</body>

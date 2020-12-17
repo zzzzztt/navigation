@@ -1,0 +1,74 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+    <title>Acceuil</title>
+    <link rel="icon" href="navi.ico" type="image/x-icon">
+    <meta content="text/html;charset=utf-8" http-equiv="content-type"/>
+    <link href="style.css" type="text/css" media="screen" rel="stylesheet"/>
+    <header>
+        <h1>NAVI_GPS</h1>
+    </header>
+</head>
+
+  <body>
+  <div class="title">
+      <p><h1>Bienvenue !</h1></p>
+
+  </div>
+      <div class="set" style="text-align: left">
+          <input type="button" id="but1" onclick="window.location.href='information.html'"></input>
+          <input type="button" id="but2" onclick="window.location.href='histoire.php'"></input>
+      </div>
+      <div class="Divetat" style="text-align: right">
+        <input type="button" id="but3" onclick="window.location.href='inscription.html'" value="inscription"><!--未登陆时显示-->
+
+          <input type="button" id="but3" onclick="window.location.href='login.html'" value="Login"><!--未登陆时显示-->
+          <input type="button" id="but3" onclick="window.location.href='logout.php'" value="Logout"><!--登陆时显示-->
+
+      </div>
+      <div class="Divsearch"><!--输入起始点与目的地-->
+          <form name="Formsearch" method="post" action="tester(3)(1).php">
+            <p>Le point de départ : <input name="depart" type="text"></p>
+            <p>Le point d'arriver : <input name="destination" type="text"></p>
+            <p> Choisir les Preferences : </p>
+
+              <p><label>type de la route :</label>
+                  Departement<input name="typeroute[]" type="checkbox" value="Departement">
+                  Nationnale<input name="typeroute[]" type="checkbox"value="Nationnale">
+                  Autoroute<input name="typeroute[]" type="checkbox" value="Autoroute">
+                  Chemin de campage<input name="typeroute[]" type="checkbox" value="Chemin de campage">
+                </p>
+              </p>
+              <p><label>type de la ville :</label>
+                Grande<input name="typeville[]" type="checkbox" value="Grande">
+                Moyenne<input name="typeville[]" type="checkbox" value="Moyenne">
+                Petite<input name="typeville[]" type="checkbox" value="Petite">
+             </p>
+              <p><label>radar :</label>
+              Oui <input name="radar" type="radio" value="radar">
+              Non <input name="radar" type="radio" value="noradar">
+              </p>
+              <p><label>payant :</label>
+              Oui <input name="payant" type="radio" value="payant">
+              Non <input name="payant" type="radio" value="nopayant">
+             </p>
+              <p><label>touristique :</label>
+              Oui <input name="touristique" type="radio" value="touristique">
+              Non <input name="touristique" type="radio" value="notouristique">
+              </p>
+              <p><label>chemin prefere :</label>
+              plus court <input name="chemin" type="radio" value="pluscourt">
+              plus rapide <input name="chemin" type="radio" value="plusrapide">
+              </p>
+        <div class="Divresult" >
+          <!--显示搜索结果-->
+        </div>
+          <input name="btnfalse" type="submit" id = "but3" value="Rechercher">
+        </div>
+          </form>
+
+        </div>
+
+  </body>
+
+</html>
